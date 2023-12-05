@@ -10,10 +10,12 @@ CONFIG += c++17
 
 SOURCES += \
     decorator/Food.cpp \
+    decorator/Laobing.cpp \
     main.cpp
 
 HEADERS += \
-    decorator/Food.h
+    decorator/Food.h \
+    decorator/Laobing.h
 
 FORMS +=
 
