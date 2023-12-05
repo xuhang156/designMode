@@ -8,6 +8,6 @@ public:
     virtual void secretRecipe();
     virtual ~SideDish();
 
-private:
+protected:
     Food& _food;
 };

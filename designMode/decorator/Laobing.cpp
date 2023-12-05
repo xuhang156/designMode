@@ -1,5 +1,4 @@
 #include "Laobing.h"
-#include <QDebug>
 
 Laobing::Laobing() {}
 
