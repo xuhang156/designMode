@@ -1,4 +1,5 @@
 #pragma once
+#include <QDebug>
 
 ///
 /// \brief The Food class
