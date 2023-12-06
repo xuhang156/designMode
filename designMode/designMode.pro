@@ -9,6 +9,8 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    command/Command.cpp \
+    command/LightOnCommand.cpp \
     decorator/Food.cpp \
     decorator/Laobing.cpp \
     decorator/Pork.cpp \
@@ -16,6 +18,8 @@ SOURCES += \
     main.cpp
 
 HEADERS += \
+    command/Command.h \
+    command/LightOnCommand.h \
     decorator/Food.h \
     decorator/Laobing.h \
     decorator/Pork.h \
