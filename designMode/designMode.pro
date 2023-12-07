@@ -12,6 +12,7 @@ SOURCES += \
     command/Command.cpp \
     command/LightOnCommand.cpp \
     command/furniture/Light.cpp \
+    command/remote-control/SimpleRemoteControl.cpp \
     decorator/Food.cpp \
     decorator/Laobing.cpp \
     decorator/Pork.cpp \
@@ -22,6 +23,7 @@ HEADERS += \
     command/Command.h \
     command/LightOnCommand.h \
     command/furniture/Light.h \
+    command/remote-control/SimpleRemoteControl.h \
     decorator/Food.h \
     decorator/Laobing.h \
     decorator/Pork.h \
