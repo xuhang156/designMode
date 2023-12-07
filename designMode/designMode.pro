@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     command/Command.cpp \
     command/LightOnCommand.cpp \
+    command/furniture/Light.cpp \
     decorator/Food.cpp \
     decorator/Laobing.cpp \
     decorator/Pork.cpp \
@@ -20,6 +21,7 @@ SOURCES += \
 HEADERS += \
     command/Command.h \
     command/LightOnCommand.h \
+    command/furniture/Light.h \
     decorator/Food.h \
     decorator/Laobing.h \
     decorator/Pork.h \

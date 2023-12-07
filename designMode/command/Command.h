@@ -8,7 +8,7 @@ public:
     Command();
     virtual ~Command();
 
-    virtual void execute(){};
+    virtual void execute() = 0;
 };
 
 #endif // COMMAND_H
