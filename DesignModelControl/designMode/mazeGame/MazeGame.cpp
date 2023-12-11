@@ -60,3 +60,12 @@ Maze* MazeGame::createMazeRefacotry(MazeFactory& factory)
 
     return aMaze;
 }
+
+Maze* MazeGame::createMazeUseBuilder(MazeBuilder& builder)
+{
+    builder.buildMaze();
+    builder.buildRoom(1);
+    builder.buildRoom(2);
+    builder.buildDoor(1, 2);
+    return builder.maze();
+}
