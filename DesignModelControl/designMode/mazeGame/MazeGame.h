@@ -1,9 +1,10 @@
 #pragma once
-#include "Room.h"
+#include "MazeFactory.h"
 
 class MazeGame
 {
 public:
     MazeGame();
     Maze* createMaze();
+    Maze* createMazeRefacotry(MazeFactory& factory);
 };

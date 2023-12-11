@@ -20,6 +20,7 @@ SOURCES += \
     main.cpp \
     mazeGame/Door.cpp \
     mazeGame/MapSite.cpp \
+    mazeGame/MazeFactory.cpp \
     mazeGame/MazeGame.cpp \
     mazeGame/Room.cpp \
     mazeGame/Wall.cpp
@@ -35,6 +36,7 @@ HEADERS += \
     decorator/SideDish.h \
     mazeGame/Door.h \
     mazeGame/MapSite.h \
+    mazeGame/MazeFactory.h \
     mazeGame/MazeGame.h \
     mazeGame/Room.h \
     mazeGame/Wall.h
