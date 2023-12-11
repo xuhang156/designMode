@@ -17,7 +17,12 @@ SOURCES += \
     decorator/Laobing.cpp \
     decorator/Pork.cpp \
     decorator/SideDish.cpp \
-    main.cpp
+    main.cpp \
+    mazeGame/Door.cpp \
+    mazeGame/MapSite.cpp \
+    mazeGame/MazeGame.cpp \
+    mazeGame/Room.cpp \
+    mazeGame/Wall.cpp
 
 HEADERS += \
     command/Command.h \
@@ -27,7 +32,12 @@ HEADERS += \
     decorator/Food.h \
     decorator/Laobing.h \
     decorator/Pork.h \
-    decorator/SideDish.h
+    decorator/SideDish.h \
+    mazeGame/Door.h \
+    mazeGame/MapSite.h \
+    mazeGame/MazeGame.h \
+    mazeGame/Room.h \
+    mazeGame/Wall.h
 
 FORMS +=
 
