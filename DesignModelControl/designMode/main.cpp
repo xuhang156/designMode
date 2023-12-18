@@ -2,6 +2,9 @@
 #include "decorator/Laobing.h"
 #include "decorator/Pork.h"
 
+#include "observer/Timer.h"
+#include "observer/ui/ShowTime.h"
+
 int main(int argc, char* argv[])
 {
     QApplication a(argc, argv);
@@ -12,6 +15,11 @@ int main(int argc, char* argv[])
 
     delete laobing;
     delete pork;
+
+    //观察者模式示例
+    Timer* timer = new Timer();
+    ShowTime* showtime = new ShowTime(timer);
+    showtime->show();
 
     return a.exec();
 }

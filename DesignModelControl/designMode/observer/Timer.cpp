@@ -11,7 +11,7 @@ int Timer::getHour() { return _dateTime.time().hour(); }
 
 int Timer::getMinute() { return _dateTime.time().minute(); }
 
-int Timer::getSecond() { return _dateTime.time().minute(); }
+int Timer::getSecond() { return _dateTime.time().second(); }
 
 void Timer::tick()
 {

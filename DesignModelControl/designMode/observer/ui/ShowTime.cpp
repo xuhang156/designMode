@@ -1,3 +1,4 @@
+#include <QDebug>
 #include "ShowTime.h"
 #include "ui_ShowTime.h"
 
@@ -19,7 +20,8 @@ void ShowTime::update(Subject* theChangedSubject)
     if (theChangedSubject != _timer)
         return;
 
-    QString str =
-        QString("%1:%2:%3").arg(_timer->getHour(), _timer->getMinute(), _timer->getSecond());
+    QString str = QString("%0:%1:%2")
+                      .arg(QString::number(_timer->getHour()), QString::number(_timer->getMinute()),
+                           QString::number(_timer->getSecond()));
     ui->label->setText(str);
 }
