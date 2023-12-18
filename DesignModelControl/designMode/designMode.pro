@@ -27,7 +27,8 @@ SOURCES += \
     mazeGame/Wall.cpp \
     observer/Observer.cpp \
     observer/Subject.cpp \
-    observer/Timer.cpp
+    observer/Timer.cpp \
+    observer/ui/ShowTime.cpp
 
 HEADERS += \
     command/Command.h \
@@ -47,9 +48,11 @@ HEADERS += \
     mazeGame/Wall.h \
     observer/Observer.h \
     observer/Subject.h \
-    observer/Timer.h
+    observer/Timer.h \
+    observer/ui/ShowTime.h
 
-FORMS +=
+FORMS += \
+    observer/ui/ShowTime.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

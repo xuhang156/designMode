@@ -16,5 +16,5 @@ int Timer::getSecond() { return _dateTime.time().minute(); }
 void Timer::tick()
 {
     _dateTime = QDateTime::currentDateTime();
-    //    notify();
+    notify();
 }
