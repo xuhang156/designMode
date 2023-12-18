@@ -26,7 +26,8 @@ SOURCES += \
     mazeGame/Room.cpp \
     mazeGame/Wall.cpp \
     observer/Observer.cpp \
-    observer/Subject.cpp
+    observer/Subject.cpp \
+    observer/Timer.cpp
 
 HEADERS += \
     command/Command.h \
@@ -45,7 +46,8 @@ HEADERS += \
     mazeGame/Room.h \
     mazeGame/Wall.h \
     observer/Observer.h \
-    observer/Subject.h
+    observer/Subject.h \
+    observer/Timer.h
 
 FORMS +=
 
