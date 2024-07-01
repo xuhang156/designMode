@@ -39,6 +39,7 @@ HEADERS += \
     decorator/Laobing.h \
     decorator/Pork.h \
     decorator/SideDish.h \
+    decorator/coffee.h \
     mazeGame/Door.h \
     mazeGame/MapSite.h \
     mazeGame/MazeBuilder.h \
