@@ -6,6 +6,10 @@
 #include "observer/Timer.h"
 #include "observer/ui/ShowTime.h"
 
+#include "factory/NYPizzaStore.h"
+
+#include "command/SimpleControl.h"
+
 int main(int argc, char* argv[])
 {
     QApplication a(argc, argv);
@@ -21,6 +25,18 @@ int main(int argc, char* argv[])
         qDebug() << mochaCoffe->cost();
     }
 
+    {
+        // 工厂模式测试
+        auto store = QSharedPointer<NYPizzaStore>::create();
+        store->orderPizza("cheese");
+    }
+
+    {
+        //命令模式示例
+        SimpleControl* ctrl = new SimpleControl();
+        ctrl->show();
+    }
+
     Food* laobing = new Laobing();
     Food* pork = new Pork(*laobing);
     laobing->cooking();
@@ -29,10 +45,11 @@ int main(int argc, char* argv[])
     delete laobing;
     delete pork;
 
-    //观察者模式示例
-    Timer* timer = new Timer();
-    ShowTime* showtime = new ShowTime(timer);
-    showtime->show();
-
+    {
+        //观察者模式示例
+        Timer* timer = new Timer();
+        ShowTime* showtime = new ShowTime(timer);
+        showtime->show();
+    }
     return a.exec();
 }

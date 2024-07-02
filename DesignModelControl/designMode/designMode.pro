@@ -10,13 +10,19 @@ CONFIG += c++17
 
 SOURCES += \
     command/Command.cpp \
+    command/LightOffCommand.cpp \
     command/LightOnCommand.cpp \
+    command/SimpleControl.cpp \
     command/furniture/Light.cpp \
     command/remote-control/SimpleRemoteControl.cpp \
     decorator/Food.cpp \
     decorator/Laobing.cpp \
     decorator/Pork.cpp \
     decorator/SideDish.cpp \
+    factory/NYCheesePizza.cpp \
+    factory/NYPizzaStore.cpp \
+    factory/Pizza.cpp \
+    factory/PizzaStore.cpp \
     main.cpp \
     mazeGame/Door.cpp \
     mazeGame/MapSite.cpp \
@@ -32,7 +38,10 @@ SOURCES += \
 
 HEADERS += \
     command/Command.h \
+    command/LightOffCommand.h \
     command/LightOnCommand.h \
+    command/Panel.h \
+    command/SimpleControl.h \
     command/furniture/Light.h \
     command/remote-control/SimpleRemoteControl.h \
     decorator/Food.h \
@@ -40,6 +49,10 @@ HEADERS += \
     decorator/Pork.h \
     decorator/SideDish.h \
     decorator/coffee.h \
+    factory/NYCheesePizza.h \
+    factory/NYPizzaStore.h \
+    factory/Pizza.h \
+    factory/PizzaStore.h \
     mazeGame/Door.h \
     mazeGame/MapSite.h \
     mazeGame/MazeBuilder.h \
@@ -53,6 +66,7 @@ HEADERS += \
     observer/ui/ShowTime.h
 
 FORMS += \
+    command/SimpleControl.ui \
     observer/ui/ShowTime.ui
 
 # Default rules for deployment.
