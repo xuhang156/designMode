@@ -7,6 +7,7 @@ public:
     Light();
     ~Light();
     void on();
+    void off();
 };
 
 #endif // LIGHT_H

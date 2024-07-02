@@ -7,7 +7,7 @@
 class LightOnCommand : public Command
 {
 public:
-    LightOnCommand(QSharedPointer<Light> light);
+    LightOnCommand(Panel& panel, QSharedPointer<Light> light);
     void execute() override;
 
 private:

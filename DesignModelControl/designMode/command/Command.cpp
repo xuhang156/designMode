@@ -1,5 +1,5 @@
 #include "Command.h"
 
-Command::Command() {}
+Command::Command(Panel& panel) : _panel(panel) {}
 
 Command::~Command() {}
